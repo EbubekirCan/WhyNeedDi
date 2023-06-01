@@ -15,16 +15,11 @@ public class MailService implements MessageService{
     }
 
     public void sendMessage(Message message){
-        System.out.println("--------------------------------------");
         System.out.println("Ben bir Mail servisiyim. Mesajınız: "+message.getMessage());
-        System.out.println("--------------------------------------");
     }
 
     @Override
     public void saveMessage(Message message) {
-        System.out.println("--------------------------------------");
-        System.out.println("--------------------------------------");
-        System.out.println("--------------------------------------");
         //repodaki save metodunu kullanmam gerekiyor??
 //        Repo repo=new FileRepository();
         repo.save(message);
