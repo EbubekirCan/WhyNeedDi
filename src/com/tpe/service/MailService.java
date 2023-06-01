@@ -22,6 +22,9 @@ public class MailService implements MessageService{
 
     @Override
     public void saveMessage(Message message) {
+        System.out.println("--------------------------------------");
+        System.out.println("--------------------------------------");
+        System.out.println("--------------------------------------");
         //repodaki save metodunu kullanmam gerekiyor??
 //        Repo repo=new FileRepository();
         repo.save(message);
